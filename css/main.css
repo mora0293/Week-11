@@ -67,7 +67,7 @@ h2{
     text-align: center;
     padding: 10px;
     margin-bottom:10px;
-    border-bottom: 1px solid darkblue;
+    border-bottom: 1px solid rgb(45, 45, 112);
 
 }
 
@@ -75,6 +75,21 @@ article div {
     font-size: 32px;
     font-weight: bold;
     background-color: rgb(166, 159, 197);
-    border:2px solid darkblue
+    border:2px solid rgb(44, 44, 89)
 
+}
+/* *********************************************
+             GRID STYLE
+************************************************ */
+
+section.one article{
+    /* similar to display flex, you need to have a grid container with display:grid; */
+
+    display: grid;
+    /* tell the grid how many collumnsit should have fr stands for fraction and it means to use a part of the available space*/
+
+    grid-template-columns: 1fr 2fr 1fr;
+    /* you can also control rows- this example the 3 row won't have a defined height */
+
+    grid-template-rows: 120px 120px;
 }
